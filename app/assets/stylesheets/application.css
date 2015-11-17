@@ -12,4 +12,15 @@
  *
  *= require_tree .
  *= require_self
+ *= require bootstrap
  */
+
+html {
+  text-align: center;
+}
+
+.logo {
+  text-align: center;
+  border-color: black;
+  border-style: solid;
+}
