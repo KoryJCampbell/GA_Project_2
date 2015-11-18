@@ -1,7 +1,7 @@
 class BookshelvesController < ApplicationController
 
   def index
-    @bookshelves = Bookshelf.all(params[:user_id])
+    @bookshelves = Bookshelf.all
   end
 
   def show
