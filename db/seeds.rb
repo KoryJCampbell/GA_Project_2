@@ -6,12 +6,11 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-User.destroy_all
 Bookshelf.destroy_all
-Book.destroy_all
+User.destroy_all
 
-users = User.create([{name:"Bill", age:25, id:1}, {name:"Mike", age:20, id:2}])
+users = User.create([{name:'Mike', age:23}, {name:"John", age:25}])
 
-bookshelves = Bookshelf.create({genre:"non-fiction", name:"Bill's Bookshelf"})
+bookshelves = Bookshelf.create([{genre:'Sports', name:'Mikes Sports Bookshelf'}, {genre:'Non-Fiction', name:'Johns Biography Bookshelf'}])
 
-books = Book.create({title:"Harry Potter", publication_date:1998 })
+books = Book.create([{title:'Sports Book', publication_date:'1996'}, {title:'Malcolm X Bio', publication_date:1965}])

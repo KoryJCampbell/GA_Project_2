@@ -6,6 +6,7 @@ class UsersController < ApplicationController
 
   def show
     @users = User.all
+    @bookshelves = Bookshelf.all
   end
 
 end
