@@ -4,7 +4,7 @@
 <h1>
   <% @bookshelves.each do |bookshelf| %>
 
-  <%= link_to bookshelf.name, user_bookshelf_path(@users, bookshelf) %>
+  <%= link_to bookshelf.name, user_bookshelves_path(@users, bookshelf) %>
 
   <% end %>
 </h1>
