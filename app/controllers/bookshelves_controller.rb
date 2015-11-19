@@ -1,15 +1,15 @@
 class BookshelvesController < ApplicationController
 
   def index
+    @users = User.all
     @bookshelves = Bookshelf.all
     @books = Book.all
-    @users = User.all
   end
 
   def show
-    @bookshelves = Bookshelf.all
-    @books = Book.all
-    @users = User.all
+    @user = User.find(params[:id])
+    @bookshelves = @user.bookshelves
+    @books = @Bookshelf.book
   end
 
 end
