@@ -1,0 +1,17 @@
+<h1>Books Page</h1>
+-----------------------
+
+<h1>
+  <% @books.each do |book| %>
+
+    <%= link_to book.title, bookshelf_book_path(@bookshelves, book) %>
+
+  <% end %>
+</h1>
+
+<h3> <a href="/books/new">New Books</a> </h3>
+
+
+-----------------------
+
+<h2><%= link_to "Home", root_path %></h2>

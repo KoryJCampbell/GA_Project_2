@@ -2,20 +2,14 @@
 -----------------------
 
 <h1>
-  <% @users.each do |user| %>
+  <% @bookshelves.each do |bookshelf| %>
 
-    <ul>
-      <a href="/bookshelf/<%= bookshelf.id %>">
-        <%= bookshelf.name %>
-      </a>
-    </ul>
+  <%= link_to bookshelf.name, user_bookshelf_path(@users, bookshelf) %>
 
   <% end %>
 </h1>
 
-<h3><a href="/users/new">([+] New Bookshelf)</a></h3>
-
-
+<h3> <a href="/bookshelves/new">New Bookshelf</a> </h3>
 -----------------------
 
 <h2><%= link_to "Home", root_path %></h2>

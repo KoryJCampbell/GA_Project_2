@@ -9,6 +9,4 @@ resources :bookshelves do
   resources :books
 end
 
-resources :books
-
 end

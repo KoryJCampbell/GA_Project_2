@@ -3,19 +3,12 @@
 
 <h1>
   <% @users.each do |user| %>
-
-    <ul>
-      <a href="/users/<%= user.id %>">
-        <%= user.name %>
-      </a>
-    </ul>
-
+<%= link_to user.name, user %>
   <% end %>
 </h1>
 
-
-<h2><%= link_to "Home", root_path %></h2>
+<h3> <a href="/users/new">New User</a> </h3>
 
 -----------------------
 
-<h3><a href="/users/new">([+] New User)</a></h3>
+<h2><%= link_to "Home", root_path %></h2>
