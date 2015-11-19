@@ -13,4 +13,4 @@ users = User.create([{name:'Mike', age:23}, {name:"John", age:25}])
 
 bookshelves = Bookshelf.create([{genre:'Sports', name:'Mikes Sports Bookshelf', user_id:1}, {genre:'Non-Fiction', name:'Johns Biography Bookshelf', user_id:2}])
 
-books = Book.create([{title:'Sports Book', publication_date:1996}, {title:'Malcolm X Bio', publication_date:1965}])
+books = Book.create([{title:'Sports Book', publication_date:1996, bookshelf_id:1}, {title:'Malcolm X Bio', publication_date:1965, bookshelf_id:2}])

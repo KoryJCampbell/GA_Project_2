@@ -1,15 +1,13 @@
 class BookshelvesController < ApplicationController
 
   def index
-    @users = User.all
-    @bookshelves = Bookshelf.all
-    @books = Book.all
+    @user = User.find(params[:user_id])
+    @books = Book.where(params[:bookshelf_id])
   end
 
   def show
-    @user = User.find(params[:id])
+    @user = User.find(params[:user_id])
     @bookshelves = @user.bookshelves
-    @books = @Bookshelf.book
   end
 
 end

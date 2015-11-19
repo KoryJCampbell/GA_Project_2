@@ -1,10 +1,10 @@
-<h1>Books Page</h1>
+<h1>Bookshelves Index Page</h1>
 -----------------------
 
 <h1>
   <% @books.each do |book| %>
 
-    <%= link_to book.title, bookshelf_books_path(@bookshelves, book) %>
+    <%= link_to book.title, bookshelf_books_path(@user, book) %>
 
   <% end %>
 </h1>
