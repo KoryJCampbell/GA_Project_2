@@ -2,13 +2,7 @@
 ----------------------- -->
 
 <h1>
-  <ul>
-  <% @books.each do |book| %>
-    <ul>
-      <%= link_to book.title, bookshelf_books_path(@user) %>
-    </ul>
-  <% end %>
-  </ul>
+      <%= link_to "Bookshelf", bookshelf_books_path(@user) %>
 </h1>
 
 

@@ -17,7 +17,7 @@
 
 html {
   text-align: center;
-  border-color: black;
+  border-color: white;
   border-style: solid;
 }
 
@@ -33,5 +33,12 @@ ul {
 }
 
 div.logo {
-  background-color: lightblue;
+background-image: url('http://idealbookshelf.typepad.com/.a/6a0133ec7ffa51970b013486687cc5970c-pi');
+background-size:  cover;
+background-repeat:  repeat;
+background-position:  top;
+background-size: 16    em;
+}
+
+p {
 }
