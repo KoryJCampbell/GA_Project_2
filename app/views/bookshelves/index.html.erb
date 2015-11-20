@@ -1,16 +1,17 @@
-<h1>Bookshelves Index Page</h1>
------------------------
+<!-- <h1>Bookshelves Index Page</h1>- -->
 
 <h1>
+  <ul>
   <% @books.each do |book| %>
-
-    <%= link_to book.title, bookshelf_books_path(@user) %>
-
+    <ul>
+      <%= link_to book.title, bookshelf_books_path(@user) %>
+    </ul>
   <% end %>
+  </ul>
 </h1>
 
-<h3> <a href="/books/new">New Books</a> </h3>
-
+<!-- <h3> <a href="/books/new">New Books</a> </h3>
+ -->
 
 -----------------------
 

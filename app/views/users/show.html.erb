@@ -1,15 +1,27 @@
-<h1>Users Show Page</h1>
------------------------
+<!-- <h1>Users Show Page</h1>
+----------------------- -->
 
 <h1>
+  <ul>
+  <% @books.each do |book| %>
+    <ul>
+      <%= link_to book.title, bookshelf_books_path(@user) %>
+    </ul>
+  <% end %>
+  </ul>
+</h1>
+
+
+
+<!-- <h1>
   <% @bookshelves.each do |bookshelf| %>
 
   <%= link_to bookshelf.name, user_bookshelves_path(@user, bookshelf) %>
 
   <% end %>
-</h1>
+</h1> -->
 
-<h3> <a href="/bookshelves/new">New Bookshelf</a> </h3>
+<!-- <h3> <a href="/bookshelves/new">New Bookshelf</a> </h3> -->
 -----------------------
 
 <h2><%= link_to "Home", root_path %></h2>
