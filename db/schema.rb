@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 20151119232720) do
     t.integer "bookshelf_id"
   end
 
+  # AM: Unless your creating a self-referential join, you don't need a `bookshelf_id` on your bookshelves table.
   create_table "bookshelves", force: :cascade do |t|
     t.string  "genre"
     t.string  "name"
@@ -30,6 +31,7 @@ ActiveRecord::Schema.define(version: 20151119232720) do
     t.integer "bookshelf_id"
   end
 
+  # AM: +1 adding custom attributes to your User model.
   create_table "users", force: :cascade do |t|
     t.string   "name"
     t.integer  "age"
