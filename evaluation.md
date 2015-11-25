@@ -4,7 +4,7 @@
 
 >Did you complete the user stories, wireframes, task tracking, and/or ERDs, as specified above? Did you use source control as expected for the phase of the program you’re in (detailed above)?
 
-**Does Not Meet Expectations**. I don't see a README or planning folder in your project repo. As your projects grow more complex, it is essential to include these so that I (or a potential employer) know what your project is all about and how to go about installing it locally. Let me know when you add this and I'll be happy to take a look.
+**Meets Expectations**. Thumbs up on including that planning folder, but I do not see a README. As your projects grow more complex, it is essential to include these so that I (or a potential employer) know what your project is all about and how to go about installing it locally. Let me know when you add this and I'll be happy to take a look.
 
 ## Technical Requirements
 
