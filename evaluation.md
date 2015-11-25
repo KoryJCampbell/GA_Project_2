@@ -18,7 +18,7 @@
 
 **Meets Expectations**. Solid job here. Ways to improve here are (1) be consistent with indentation and (2) remove commented-out code from your master branch. Also, please look at my inline code comments via the link below.
 
-[Inline code comments.]()
+[Inline code comments.](https://github.com/KoryJCampbell/GA_Project_2/pull/2/files)
 
 ## Problem Solving
 
